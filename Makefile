@@ -1,6 +1,8 @@
 .ONESHELL:
 SHELL = /bin/bash
 
+fish-cluster: build run
+
 build:
 	docker build --tag docker-only-project .
 

@@ -7,7 +7,7 @@ build:
 	sudo docker build --tag docker-only-project .
 
 run:
-	sudo docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock docker-only-project up
+	sudo docker run --rm -v /var/run/docker.sock:/var/run/docker.sock docker-only-project up
 
 kill:
 	docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock docker-only-project down
